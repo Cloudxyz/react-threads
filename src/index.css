@@ -43,6 +43,10 @@ h1{
   color: rgb(114, 114, 114);
 }
 
+.sub-text a{
+  color: rgb(114, 114, 114);
+}
+
 a{
   text-decoration: none;
 }
@@ -90,8 +94,81 @@ button.primary{
   font-weight: bold;
   width: 50%;
   border-bottom: 1px solid rgb(114, 114, 114);
+}
 
-  & .current{
-    border-bottom: 2px solid rgb(250, 250, 250);
-  }
+.button-container .current{
+  border-bottom: 2px solid rgb(250, 250, 250);
+}
+
+.feed-card .icons svg{
+  height: 20px;
+  padding: 0 5px;
+}
+
+.feed-card{
+  border-bottom: 1px solid rgb(114, 114, 114);
+  padding: 10px 0;
+}
+
+.feed-card .text-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed-card .img-container{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.feed-card .img-container img{
+  height: 110%;
+}
+
+.feed{
+  height: 350px;
+  overflow-y: scroll;
+}
+
+input{
+  background-color: transparent;
+  border: 1px solid rgb(114, 114, 114);
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: rgb(250, 250, 250);
+}
+
+input:focus{
+  outline: none;
+}
+
+.popup{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 650px;
+  width: 380px;
+  border-radius: 4px;
+  background-color: rgb(38, 38, 38);
+  padding: 20px;
+  overflow-y: scroll;
+  box-shadow: rgba(0,0,0,0.25) 0 54px 55px,
+              rgba(0,0,0,0.12) 0 -12px 30px,
+              rgba(0,0,0,0.12) 0 4px 6px,
+              rgba(0,0,0,0.17) 0 12px 13px,
+              rgba(0,0,0,0.09) 0 -3px 5px;
+
+
+  ;
+}
+
+.write-icon{
+  fill: rgb(250, 250, 250);
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 170px;
 }

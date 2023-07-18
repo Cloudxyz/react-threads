@@ -1,107 +1,107 @@
 {
-    "users": [
+  "users": [
+    {
+      "id": 1,
+      "user_uuid": "3175e765-ba62-4059-b65f-5fd20f1fb929",
+      "usersname": "Devalan",
+      "handle": "devalan",
+      "bio": "I am a software engineer, currently working at @google on @angular. I love to travel and I love to code.",
+      "link": "https://cloudxyz.github.io/",
+      "img": "https://imgur.com/o0itxM7",
+      "instagram_url": "https://www.instagram.com/devalanc/",
+      "followers": [
         {
-            "id": 1,
-            "user_uuid": "3175e765-ba62-4059-b65f-5fd20f1fb929",
-            "usersname": "Devalan",
-            "handle": "devalan",
-            "bio": "I am a software engineer, currently working at @google on @angular. I love to travel and I love to code.",
-            "link": "https://cloudxyz.github.io/",
-            "img": "https://imgur.com/t/chocolate/g4u2Uki",
-            "instagram_url": "https://www.instagram.com/devalanc/",
-            "followers": [
-                {
-                    "user_uuid": "e09ffbbd-83a0-4cd0-82ae-7c091252130e"
-                },
-                {
-                    "user_uuid": "0ae97eda-b5bf-400b-aeae-1a61f48f9403"
-                }
-            ]
-
+          "user_uuid": "e09ffbbd-83a0-4cd0-82ae-7c091252130e"
         },
         {
-            "id": 2,
-            "user_uuid": "e09ffbbd-83a0-4cd0-82ae-7c091252130e",
-            "usersname": "Roberto Robarto",
-            "handle": "robert",
-            "bio": "I am a fucking crazy",
-            "link": "https://cloudxyz.github.io/",
-            "img": "https://imgur.com/t/chocolate/g4u2Uki",
-            "instagram_url": "https://www.instagram.com/devalanc/",
-            "followers": [
-                {
-                    "user_uuid": "3175e765-ba62-4059-b65f-5fd20f1fb929"
-                },
-                {
-                    "user_uuid": "d6b18d2b-8e27-4637-bb9c-72bbf1daca13"
-                }
-            ]
-
-        },
-        {
-            "id": 3,
-            "user_uuid": "d6b18d2b-8e27-4637-bb9c-72bbf1daca13",
-            "usersname": "Tanpanchiro",
-            "handle": "tanpanchito",
-            "bio": "I am a fucking swordman",
-            "link": "https://cloudxyz.github.io/",
-            "img": "https://imgur.com/t/chocolate/g4u2Uki",
-            "instagram_url": "https://www.instagram.com/devalanc/",
-            "followers": [
-                {
-                    "user_uuid": "3175e765-ba62-4059-b65f-5fd20f1fb929"
-                },
-                {
-                    "user_uuid": "e09ffbbd-83a0-4cd0-82ae-7c091252130e"
-                }
-            ]
-
+          "user_uuid": "0ae97eda-b5bf-400b-aeae-1a61f48f9403"
         }
-    ],
-    "threads": [
+      ]
+    },
+    {
+      "id": 2,
+      "user_uuid": "e09ffbbd-83a0-4cd0-82ae-7c091252130e",
+      "usersname": "Roberto Robarto",
+      "handle": "robert",
+      "bio": "I am a fucking crazy",
+      "link": "https://cloudxyz.github.io/",
+      "img": "https://imgur.com/o0itxM7",
+      "instagram_url": "https://www.instagram.com/devalanc/",
+      "followers": [
         {
-            "id": 1,
-            "timestamp": "Fri Jul 14 2023 13:52:16 GMT-0600 (hora estándar central)",
-            "thread_from": "3175e765-ba62-4059-b65f-5fd20f1fb929",
-            "thread_to": null,
-            "reply_to": null,
-            "text": "Hola bebe como has estado, turururururn",
-            "likes": [
-                {
-                    "uuid": "d6b18d2b-8e27-4637-bb9c-72bbf1daca13"
-                },
-                {
-                    "uuid": "3175e765-ba62-4059-b65f-5fd20f1fb929"
-                }
-
-            ]
+          "user_uuid": "3175e765-ba62-4059-b65f-5fd20f1fb929"
         },
         {
-            "id": 2,
-            "timestamp": "Fri Jul 04 2023 13:52:16 GMT-0600 (hora estándar central)",
-            "thread_from": "3175e765-ba62-4059-b65f-5fd20f1fb929",
-            "thread_to": null,
-            "reply_to": null,
-            "text": "Como estas que bien te ves",
-            "likes": []
-        },
-        {
-            "id": 3,
-            "timestamp": "Fri Jul 02 2023 13:52:16 GMT-0600 (hora estándar central)",
-            "thread_from": "0ae97eda-b5bf-400b-aeae-1a61f48f9403",
-            "thread_to": null,
-            "reply_to": null,
-            "text": "Si tu me quieres dame una sonrisa, si tu me amas dimelo con un beso",
-            "likes": []
-        },
-        {
-            "id": 4,
-            "timestamp": "Fri Jun 23 2023 13:52:16 GMT-0600 (hora estándar central)",
-            "thread_from": "d6b18d2b-8e27-4637-bb9c-72bbf1daca13",
-            "thread_to": "0ae97eda-b5bf-400b-aeae-1a61f48f9403",
-            "reply_to": 3,
-            "text": "Si tu me quieres dame una sonrisa, si tu me amas dimelo con un beso",
-            "likes": []
+          "user_uuid": "d6b18d2b-8e27-4637-bb9c-72bbf1daca13"
         }
-    ]
+      ]
+    },
+    {
+      "id": 3,
+      "user_uuid": "d6b18d2b-8e27-4637-bb9c-72bbf1daca13",
+      "usersname": "Tanpanchiro",
+      "handle": "tanpanchito",
+      "bio": "I am a fucking swordman",
+      "link": "https://cloudxyz.github.io/",
+      "img": "https://imgur.com/o0itxM7",
+      "instagram_url": "https://www.instagram.com/devalanc/",
+      "followers": [
+        {
+          "user_uuid": "3175e765-ba62-4059-b65f-5fd20f1fb929"
+        },
+        {
+          "user_uuid": "e09ffbbd-83a0-4cd0-82ae-7c091252130e"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "id": 1,
+      "timestamp": "Fri Jul 14 2023 13:52:16 GMT-0600 (hora estándar central)",
+      "thread_from": "3175e765-ba62-4059-b65f-5fd20f1fb929",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Hola bebe como has estado, turururururn",
+      "likes": [
+        {
+          "user_uuid": "d6b18d2b-8e27-4637-bb9c-72bbf1daca13"
+        },
+        {
+          "user_uuid": "3175e765-ba62-4059-b65f-5fd20f1fb929"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "timestamp": "Fri Jul 04 2023 13:52:16 GMT-0600 (hora estándar central)",
+      "thread_from": "3175e765-ba62-4059-b65f-5fd20f1fb929",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Como estas que bien te ves",
+      "likes": [
+        {
+          "user_uuid": "3175e765-ba62-4059-b65f-5fd20f1fb929"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "timestamp": "Fri Jul 02 2023 13:52:16 GMT-0600 (hora estándar central)",
+      "thread_from": "3175e765-ba62-4059-b65f-5fd20f1fb929",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Si tu me quieres dame una sonrisa, si tu me amas dimelo con un beso",
+      "likes": []
+    },
+    {
+      "id": 4,
+      "timestamp": "Fri Jun 23 2023 13:52:16 GMT-0600 (hora estándar central)",
+      "thread_from": "3175e765-ba62-4059-b65f-5fd20f1fb929",
+      "thread_to": "0ae97eda-b5bf-400b-aeae-1a61f48f9403",
+      "reply_to": 3,
+      "text": "Si tu me quieres dame una sonrisa, si tu me amas dimelo con un beso",
+      "likes": []
+    }
+  ]
 }
