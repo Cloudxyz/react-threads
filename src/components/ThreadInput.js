@@ -1,9 +1,9 @@
-export const ThreadInput = () => {
-  return (
-    <>
-        <p></p>
-        <input />
-        <button className="primary">Post</button>
-    </>
-  );
+export const ThreadInput = ({user, text, setText, postThread}) => {
+	return (
+		<>
+			<p>{user.handle}</p>
+			<input value={text} onChange={e => setText(e.target.value)} />
+			<button className="primary" onClick={postThread}>Post</button>
+		</>
+	);
 }

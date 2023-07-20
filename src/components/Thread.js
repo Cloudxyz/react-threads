@@ -1,13 +1,17 @@
 import moment from "moment/moment";
+import { useEffect, useState } from "react";
 
-export const Thread = ({setShowPopUp, filterThread, user, getThreads}) => {
+export const Thread = ({setShowPopUp, filterThread, user, getThreads, setInteractingThread}) => {
   const { text, timestamp, likes } = filterThread;
   const { handle, img, user_uuid } = user;
+
+  const [replyLength, setReplyLength] = useState(null);
 
   const timePassed = moment().startOf('day').fromNow(timestamp);
 
   const handleClick = () => {
     setShowPopUp(true);
+    setInteractingThread(filterThread);
   }
 
   const postLike = async () => {
@@ -34,6 +38,20 @@ export const Thread = ({setShowPopUp, filterThread, user, getThreads}) => {
       }
   }
 
+  const getRepliesLength = async () => {
+    try {
+      const response = await fetch(`http://localhost:3000/threads?reply_to=${filterThread?.id}`);
+      const data = await response.json();
+      setReplyLength(data.length);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  useEffect(() => {
+    getRepliesLength();
+  }, [filterThread]);
+
   return (
     <article className="feed-card">
       <div className="text-container">
@@ -54,7 +72,7 @@ export const Thread = ({setShowPopUp, filterThread, user, getThreads}) => {
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 10v7h10.797l1.594 2h-14.391v-9h-3l4-5 4 5h-3zm14 4v-7h-10.797l-1.594-2h14.391v9h3l-4 5-4-5h3z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"/></svg>
       </div>
-      <p className="sub-text"><span onClick={handleClick}>x replies</span> • <span>{likes.length} likes</span></p>
+      <p className="sub-text"><span onClick={handleClick}>{replyLength} replies</span> • <span>{likes.length} likes</span></p>
     </article>
   );
 }

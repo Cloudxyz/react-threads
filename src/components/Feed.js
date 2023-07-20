@@ -1,6 +1,6 @@
 import { Thread } from "./Thread";
 
-export const Feed = ({user, setShowPopUp, filteredThreads, getThreads}) => {
+export const Feed = ({user, setShowPopUp, filteredThreads, getThreads, setInteractingThread}) => {
   return (
     <div className="feed">
       {
@@ -11,6 +11,7 @@ export const Feed = ({user, setShowPopUp, filteredThreads, getThreads}) => {
                   filterThread={filterThread}
                   user={user}
                   getThreads={getThreads}
+                  setInteractingThread={setInteractingThread}
                 />
         }
       )}
